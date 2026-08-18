@@ -170,7 +170,7 @@ export default function Dashboard() {
               id="image"
               name="image"
               type="text"
-              placeholder="/products/serum4.jpg or https://..."
+              placeholder="products/serum4.jpg or https://..."
               value={form.image}
               onChange={handleChange}
             />

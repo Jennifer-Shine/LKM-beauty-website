@@ -1,0 +1,38 @@
+.confirmation-page {
+  padding: 110px 0;
+  min-height: calc(100vh - 76px);
+}
+
+.confirmation-inner {
+  max-width: 440px;
+  text-align: center;
+}
+
+.confirmation-inner h1 {
+  margin-top: 10px;
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.confirmation-inner p {
+  margin-top: 16px;
+  color: rgba(44, 40, 34, 0.68);
+}
+
+.confirmation-card {
+  margin: 32px 0;
+  background: #fff;
+  border: 1px solid var(--color-line);
+  padding: 22px 26px;
+  text-align: left;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.confirmation-row:not(:last-child) {
+  border-bottom: 1px solid var(--color-line);
+}

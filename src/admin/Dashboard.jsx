@@ -71,13 +71,19 @@ export default function Dashboard() {
     setSaving(true);
     setError("");
 
-    const payload = {
-      name: form.name,
-      category: form.category,
-      description: form.description,
-      price: form.price === "" ? null : Number(form.price),
-      image: form.image.trim(),
-    };
+    let rawImage = form.image.trim();
+// remove leading slash if exists
+if(rawImage.startsWith('/')){
+  rawImage = rawImage.slice(1);
+}
+
+const payload = {
+  name: form.name,
+  category: form.category,
+  description: form.description,
+  price: form.price === "" ? null : Number(form.price),
+  image: rawImage,
+};
 
     try {
       if (editingId) {
